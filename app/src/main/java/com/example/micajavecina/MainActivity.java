@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private RatingBar ratingBar;
     Button boton;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,VistausuarioCliente.class));
+
 
             }
         });
@@ -41,6 +43,10 @@ public class MainActivity extends AppCompatActivity {
         Intent siguiente = new Intent(this,usuario_admin.class);
         startActivity(siguiente);
 
+    }
+    public void Admincajav (View View){
+        Intent admincaja = new Intent(this,ActiAdministrarCaja.class);
+        startActivity(admincaja);
     }
 
 

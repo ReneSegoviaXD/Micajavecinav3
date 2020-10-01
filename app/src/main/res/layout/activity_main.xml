@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="339dp"
         android:layout_height="265dp"
         android:layout_marginStart="32dp"
@@ -45,10 +46,10 @@
             android:text="@string/BotonSiguiente" />
 
         <Button
-            android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Reguistrar caja vecina" />
+            android:onClick="Admincajav"
+            android:text="@string/BotonCajav" />
 
     </LinearLayout>
 
@@ -57,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
-        android:layout_marginBottom="136dp"
+        android:layout_marginBottom="84dp"
         android:numStars="5"
         android:rating="0"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -74,5 +75,23 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/ratingBar"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="211dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="65dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
