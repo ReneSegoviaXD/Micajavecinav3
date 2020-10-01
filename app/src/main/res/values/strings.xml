@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Mi caja vecina</string>
+    <string name="BotonSiguiente">Ingresar administrador caja vecina</string>
+    <string name="tv1">Primer Avtivity</string>
+    <string name="BotonAnterior">Anterior</string>
+    <string name="tv2">Ingrese usuario y contraseña para cambiar el estado de la caja vecina</string>
 </resources>
